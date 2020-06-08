@@ -36,6 +36,7 @@
 
 <meta name="generator" content="Hexo 4.2.1"></head>
 
+<html>
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -108,8 +109,8 @@
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: rgba(0,0,0,0.5)"></div>
-	<div class="btnctn js-mobile-btnctn">
+  	<!-- <div class="overlay js-overlay" style="background: rgba(0,0,0,0.5)"></div>-->
+	<div class="overlay js-mobile-overlay">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
 	<div class="intrude-less">
@@ -130,7 +131,7 @@
 				
 			
 			
-			
+
 			<nav class="header-nav">
 				<div class="social">
 					
@@ -155,7 +156,7 @@
 		        
 				</ul>
 			</nav>
-		</header>				
+		</header>
 	</div>
 	<div class="mobile-mask" style="display:none" q-show="isShow"></div>
 </nav>
@@ -378,10 +379,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">这只是一个测试</a>
-              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
